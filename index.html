@@ -4,78 +4,79 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Air Europe</title>
+  <link rel="stylesheet" href="normalize.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="wrapper">
+  <div class="page">
     <!-- Шапка -->
     <header class="header">
-      <div class="logo">✈️ Air Europe</div>
-      <nav>
-        <ul class="menu">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Туры</a></li>
-          <li><a href="#">Акции</a></li>
-          <li><a href="#">Контакты</a></li>
+      <div class="header__logo">✈️ Air Europe</div>
+      <nav class="header__nav">
+        <ul class="menu header__menu">
+          <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Туры</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
         </ul>
       </nav>
-      <div class="phone">📞 8 800 700 30 30</div>
+      <div class="header__phone">📞 8 800 700 30 30</div>
     </header>
 
-    <!-- Баннер -->
+    <!-- Баннер (Приветственная секция) -->
     <section class="hero">
-      <div class="hero-content">
-        <h1 class="title">
+      <div class="hero__content">
+        <h1 class="hero__title">
           Авторские туры<br />
           по Европе
         </h1>
-        <a href="#" class="btn">Подробнее</a>
+        <a href="#" class="btn hero__btn">Подробнее</a>
       </div>
     </section>
 
     <!-- Горящие туры -->
     <section class="tours">
-      <h2>Горящие туры 🔥</h2>
-      <ul class="cards">
-        <li class="card">
-          <div class="sticker">🏝️</div>
-          <h3>Таиланд</h3>
-          <p>Пляжи, экскурсии и восточная кухня</p>
-          <a class="btn" href="#">Смотреть</a>
+      <h2 class="tours__title">Горящие туры 🔥</h2>
+      <ul class="cards tours__cards">
+        <li class="card cards__item">
+          <div class="card__sticker">🏝️</div>
+          <h3 class="card__title">Таиланд</h3>
+          <p class="card__desc">Пляжи, экскурсии и восточная кухня</p>
+          <a class="btn card__btn" href="#">Смотреть</a>
         </li>
-        <li class="card">
-          <div class="sticker">🌋</div>
-          <h3>Бали</h3>
-          <p>Природа, водопады и серфинг</p>
-          <a class="btn" href="#">Смотреть</a>
+        <li class="card cards__item">
+          <div class="card__sticker">🌋</div>
+          <h3 class="card__title">Бали</h3>
+          <p class="card__desc">Природа, водопады и серфинг</p>
+          <a class="btn card__btn" href="#">Смотреть</a>
         </li>
-        <li class="card">
-          <div class="sticker">🌴</div>
-          <h3>Индонезия</h3>
-          <p>Острова, туризм и традиции</p>
-          <a class="btn" href="#">Смотреть</a>
+        <li class="card cards__item">
+          <div class="card__sticker">🌴</div>
+          <h3 class="card__title">Индонезия</h3>
+          <p class="card__desc">Острова, туризм и традиции</p>
+          <a class="btn card__btn" href="#">Смотреть</a>
         </li>
       </ul>
     </section>
 
     <!-- Новости и акции -->
     <section class="news">
-      <h2>Новости и акции</h2>
-      <div class="news-blocks">
-        <div class="news-item">
-          <div class="sticker news-sticker">🎉</div>
-          <p>Дешевые путевки на Новый Год!</p>
+      <h2 class="news__title">Новости и акции</h2>
+      <div class="news__blocks">
+        <div class="news-item news__item">
+          <div class="news-item__sticker">🎉</div>
+          <p class="news-item__text">Дешевые путевки на Новый Год!</p>
         </div>
-        <div class="news-item">
-          <div class="sticker news-sticker">🏄‍♂️</div>
-          <p>Акции для серферов и экстремалов</p>
+        <div class="news-item news__item">
+          <div class="news-item__sticker">🏄‍♂️</div>
+          <p class="news-item__text">Акции для серферов и экстремалов</p>
         </div>
       </div>
     </section>
 
     <!-- Подвал -->
-    <footer>
-      <p>© 2025 Air Europe</p>
+    <footer class="footer">
+      <p class="footer__copy">© 2025 Air Europe</p>
     </footer>
   </div>
 </body>
